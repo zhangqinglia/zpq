@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        #container {
+            width: 800px;
+            height: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        #container img {
+            padding: 10px 10px 20px;
+            background: white;
+            border: 1px solid #dddddd;
+            box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+            transition: all 0.5s ease-in;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #container img:hover {
+            box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+            transform: rotate(0deg) scale(1.20);
+            z-index: 2;
+        }
+
+        img[class ^="pic"]{
+            height: 100px;
+        }
+        /*第一张图片*/
+        .pic1{
+            left: 0px;
+            top: 5px;
+            transform: rotate(-2.5deg);
+        }
+
+        .pic2 {
+            left: 150px;
+            top: 0px;
+            transform: rotate(0deg);
+        }
+
+        .pic3 {
+            left: 300px;
+            top: 10px;
+            transform: rotate(-10deg);
+        }
+
+        .pic4 {
+            left:450px;
+            top: 20px;
+            transform: rotate(-5deg);
+        }
+
+        .pic5 {
+            left: 600px;
+            top: 15px;
+            transform: rotate(5deg);
+        }
+
+        .pic6 {
+            left: 750px;
+            top: 5px;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="pic1" src="img/11.jpg">
+        <img class="pic2" src="img/22.jpg">
+        <img class="pic3" src="img/33.jpg">
+        <img class="pic4" src="img/44.jpg">
+        <img class="pic5" src="img/55.jpg">
+        <img class="pic6" src="img/66.jpg">
+    </div>
+</body>
+</html>
